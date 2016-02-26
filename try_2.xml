@@ -1,10 +1,10 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="140" x="48" y="39">
+  <block type="movement_forward" id="140" x="-68" y="-111">
     <next>
       <block type="controls_repeat" id="8" inline="true">
         <value name="TIMES">
           <block type="math_number" id="37">
-            <field name="NUM">3</field>
+            <field name="NUM">9</field>
           </block>
         </value>
         <statement name="DO">
@@ -14,53 +14,8 @@
                 <field name="NUM">5000</field>
               </block>
             </value>
-            <next>
-              <block type="led_select" id="257" inline="true">
-                <field name="ACTION">ON</field>
-                <value name="LED">
-                  <block type="math_number" id="265">
-                    <field name="NUM">5000</field>
-                  </block>
-                </value>
-              </block>
-            </next>
           </block>
         </statement>
-        <next>
-          <block type="movement_reverse" id="150">
-            <next>
-              <block type="controls_repeat" id="175" inline="true">
-                <value name="TIMES">
-                  <block type="math_number" id="200">
-                    <field name="NUM">3</field>
-                  </block>
-                </value>
-                <statement name="DO">
-                  <block type="robot_delay" id="231" inline="true">
-                    <value name="DELAY">
-                      <block type="math_number" id="201">
-                        <field name="NUM">5000</field>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="led_select" id="258" inline="true">
-                        <field name="ACTION">ON</field>
-                        <value name="LED">
-                          <block type="math_number" id="266">
-                            <field name="NUM">5000</field>
-                          </block>
-                        </value>
-                      </block>
-                    </next>
-                  </block>
-                </statement>
-                <next>
-                  <block type="movement_stop" id="110"></block>
-                </next>
-              </block>
-            </next>
-          </block>
-        </next>
       </block>
     </next>
   </block>
